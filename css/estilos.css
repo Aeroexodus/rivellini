@@ -1,8 +1,32 @@
     /* ======= GOOGLE FONTS ======== */
-
+    @import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;600;700;800&display=swap');
 
     /* ======= VARIABLES CSS ======== */
+    :root {
+        --header-height: 3rem;
+        --font-semi: 600;
 
+        /*===== Fuente y tipografia =====*/
+        --body-font: 'Asap', san-serif;
+        --big-font-size: 3rem;
+        --h2-font-size: 1.25rem;
+        --h2-font-size-v2: 2rem;
+        --h3-font-size: 1.25rem
+        --h4-font-size: 1.5rem
+        --normal-font-size: .938rem;
+        --smaller-font-size: .75rem;
+           
+        /*===== Colores =====*/
+        --color-principal: hsl(326, 61%, 70%);
+        --color-secundario: hsl(326, 56%, 22%);
+
+        /*===== Margenes =====*/
+        --margen-1: 0.5rem;
+        --margen-2: 1rem;
+        --margen-4: 2rem;
+        --margen-5: 2.5rem;
+        --margen-6: 3rem;
+      }
 
     /* COLORES ====================== */
 
