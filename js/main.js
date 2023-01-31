@@ -67,6 +67,6 @@ const sr = ScrollReveal({
 });
 
 sr.reveal('.inicio__data, .presentacion__imagen, .acordeon__subtitulo, .acordeon__texto',{}); 
-sr.reveal('.inicio__imagen, .presentacion__subtitulo, .contacto__info, .acordeon__imagen',{delay: 300});
+sr.reveal('.inicio__imagen, .presentacion__subtitulo, .subtitulo-seccion,.contacto__info, .acordeon__imagen',{delay: 300});
 sr.reveal('.acordeon__data, .acordeon__cabecera, .trabajo__imagen, .inicio__social',{interval: 200}); 
 sr.reveal('.contenido, .seccion',{interval: 100});
