@@ -17,3 +17,22 @@ function linkAction(){
     navMenu.classList.remove('show')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+/*======== ACORDEON =======*/
+const acordeonContent = document.getElementsByClassName('acordeon__contenido'),
+    acordeonHeader = document.querySelectorAll('.acordeon__cabecera')
+
+function toggleacordeon(){
+    let itemClass = this.parentNode.className
+
+    for(i = 0; i < acordeonContent.length; i++){
+        acordeonContent[i].className = 'acordeon__contenido acordeon__cerrado'
+    }
+    if(itemClass === 'acordeon__contenido acordeon__cerrado'){
+        this.parentNode.className = 'acordeon__contenido acordeon__abierto' 
+    }
+}
+
+acordeonHeader.forEach((el) =>{
+    el.addEventListener('click', toggleacordeon)
+})
