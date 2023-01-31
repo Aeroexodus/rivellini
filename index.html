@@ -20,56 +20,220 @@
 <body>
     <!-- ===== MENÚ DE NAVEGACIÓN ===== -->
 <header class="menu-principal">
-<nav class="nav grilla">
-    <div>
-        <a href="#inicio" class="nav__logo">RIVELLINI CV</a>
-    </div>
-    <div class="nav__menu nav-menu">
-        <ul class="nav__lista">
-            <li class="nav__item"><a href="#inicio" class="nav__link active">Inicio</a></li>
-            <li class="nav__item"><a href="#presentacion" class="nav__link">Presentación</a></li>
-            <li class="nav__item"><a href="#aptitudes" class="nav__link">Aptitudes</a></li>
-            <li class="nav__item"><a href="#experiencia" class="nav__link">Experiencia</a></li>
-            <li class="nav__item"><a href="#formacion" class="nav__link">Formación</a></li>
-            <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
-        </ul>
-    </div>
-</nav>
-
+    <nav class="nav grilla">
+        <div>
+            <a href="#inicio" class="nav__logo">RIVELLINI CV</a>
+        </div>
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__lista">
+                <li class="nav__item"><a href="#inicio" class="nav__link active">Inicio</a></li>
+                <li class="nav__item"><a href="#presentacion" class="nav__link">Presentación</a></li>
+                <li class="nav__item"><a href="#conocimientos" class="nav__link">Conocimientos</a></li>
+                <li class="nav__item"><a href="#experiencia" class="nav__link">Experiencia</a></li>
+                <li class="nav__item"><a href="#formacion" class="nav__link">Formación</a></li>
+                <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="nav__hamburguesa" id="nav-hamburguesa">
+            <i class='bx bx-menu'></i>                
+        </div>
+    </nav>
 </header>
-<main class="l-main">
+<main>
 
-    <!-- =========== INICIO =========== -->
-    <section class="inicio grilla" id="inicio">
-
-    </section>    
-    <!-- ======== PRESENTACIÓN ======== -->
-    <section class="seccion " id="presentacion">
-        <h2 class="titulo-seccion">Hola</h2>
-
-    </section>
-    <!-- ======== CONOCIMIENTOS ======== -->
+<!-- =========== INICIO =========== -->
+<section class="inicio grilla" id="inicio">
+    <div class="inicio__info">
+        <i class="fa-brackets-curly  acordeon__icono"></i>
+        <h1 class="inicio__titulo"><br><span class="inicio__titulo-color">RIVELLINI</span><br></h1>
+        <h1 class="inicio__titulo2"><span class="inicio__titulo-color">ROBERTO ENIO ALEJANDRO</span></h1>
+        <h1 class="inicio__titulo3">Web Designer</h1>
+        <a href="rivellini-cv.pdf" target="_blank" class="boton">Descargar CV</a>   
+    </div>
+    <div class="inicio__social">
+        <a href="" class="inicio__social-icono"><i class='bx bxl-linkedin'></i></a>
+        <a href="" class="inicio__social-icono"><i class='bx bxl-instagram'></i></a>
+        <a href="" class="inicio__social-icono"><i class='bx bxl-pinterest'></i></a>
+        <a href="" class="inicio__social-icono"><i class='bx bxl-dribbble'></i></a>
+        <a href="" class="inicio__social-icono"><i class='bx bxl-behance'></i></a>
+        <a href="" class="inicio__social-icono"><i class='bx bxl-github'></i></a>
+    </div>
+    <div class="inicio__imagen">
+        <div class="imagen__perfil">
+            <img src="imagenes/perfil.jpg" alt="Foto de perfil">
+        </div>
+    </div>
+</section>
+<!-- ======== PRESENTACIÓN ======== -->
+<section class="seccion " id="presentacion">
+    <h2 class="titulo-seccion">Hola</h2>
+    <div class="presentacion__contenedor grilla">
+        <div class="presentacion__imagen">
+            <img src="imagenes/universo-rivellini.jpg" alt="Imagen del universo de Rivellini Roberto Enio Alejandro">
+        </div>
+        <div>
+            <h2 class="presentacion__subtitulo">Conozca mi universo</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>           
+        </div>                                   
+    </div>
+</section>
+<!-- ======== CONOCIMIENTOS ======== -->
     <section class="seccion" id="aptitudes">
         <h2 class="titulo-seccion">Conocimientos</h2>
     
     </section>
-    <!-- ========= EXPERIENCIA ========= -->
-    <section class="seccion" id="experiencia"> 
-        <h2 class="titulo-seccion">Experiencia</h2>
+<!-- ========= EXPERIENCIA ========= -->
+<section class="seccion" id="experiencia"> 
+    <h2 class="titulo-seccion">Experiencia</h2>
+    <div class="trabajo__contenedor grilla">
+        <div class="experiencia">
+            <div class="contenido">
+                <div class="trabajo__fecha">
+                    <span>2020 - Present</span>
+                </div>
+                <div class="trabajo__empresa">
+                    <span>Company</span>
+                </div>
+                <div class="trabajo__titulo">
+                    <span>UX/UI Designer</span>
+                </div>
+                <div class="trabajo__descripcion">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolores aperiam tenetur perferendis inventore ipsum temporibus iure quis enim officia.</p>
+                </div>
+            </div>    
+        </div>
+        <div class="experiencia">
+            <div class="contenido">
+                <div class="trabajo__fecha">
+                    <span>2018 - 2020</span>
+                </div>
+                <div class="trabajo__empresa">
+                    <span>Company</span>
+                </div>
+                <div class="trabajo__titulo">
+                    <span>Junior UI Designer</span>
+                </div>
+                <div class="trabajo__descripcion">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolores aperiam tenetur perferendis inventore ipsum temporibus iure quis enim officia.</p>
+                </div>
+            </div>
+        </div>
+        <div class="experiencia">
+            <div class="contenido">
+                <div class="trabajo__fecha">
+                    <span>2020 - Present</span>
+                </div>
+                <div class="trabajo__empresa">
+                    <span>Company</span>
+                </div>
+                <div class="trabajo__titulo">
+                    <span>UX/UI Designer</span>
+                </div>
+                <div class="trabajo__descripcion">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolores aperiam tenetur perferendis inventore ipsum temporibus iure quis enim officia.</p>
+                </div>
+            </div>                   
+        </div>
+        <div class="experiencia">
+            <div class="contenido">
+                <div class="trabajo__fecha">
+                    <span>2018 - 2020</span>
+                </div>
+                <div class="trabajo__empresa">
+                    <span>Company</span>
+                </div>
+                <div class="trabajo__titulo">
+                    <span>Junior UI Designer</span>
+                </div>
+                <div class="trabajo__descripcion">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolores aperiam tenetur perferendis inventore ipsum temporibus iure quis enim officia.</p>
+                </div>
+            </div>
+        </div>
+        <div class="experiencia">
+            <div class="contenido">
+                <div class="trabajo__fecha">
+                    <span>2020 - Present</span>
+                </div>
+                <div class="trabajo__empresa">
+                    <span>Company</span>
+                </div>
+                <div class="trabajo__titulo">
+                    <span>UX/UI Designer</span>
+                </div>
+                <div class="trabajo__descripcion">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolores aperiam tenetur perferendis inventore ipsum temporibus iure quis enim officia.</p>
+                </div>
+            </div>   
+        </div>
+        <div class="experiencia">
+            <div class="contenido">
+                <div class="trabajo__fecha">
+                    <span>2018 - 2020</span>
+                </div>
+                <div class="trabajo__empresa">
+                    <span>Company</span>
+                </div>
+                <div class="trabajo__titulo">
+                    <span>Junior UI Designer</span>
+                </div>
+                <div class="trabajo__descripcion">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolores aperiam tenetur perferendis inventore ipsum temporibus iure quis enim officia.</p>
+                </div>
+            </div>
+        </div>
+    </div>
     
-    </section>
-    <!-- ========== FORMACIÓN ========== -->
+</section>
+<!-- ========== FORMACIÓN ========== -->
     <section class="seccion" id="formacion">
         <h2 class="titulo-seccion">Formación</h2>
     
     </section>
-    <!-- ========== CONTACTO =========== -->    
-    <section class="seccion" id="contacto">
-        <h2 class="titulo-seccion">Contacto</h2>
-    
-    </section>
+<!-- ========== CONTACTO =========== -->    
+<section class="seccion" id="contacto">
+    <h2 class="titulo-seccion">Contacto</h2>
+    <div class="contacto__contenedor grilla">
+        <div class="presentacion__imagen">
+            <img src="imagenes/contacto.jpg" alt="Foto presentación Rivellini Roberto Enio Alejandro">
+        </div>
+        <div>
+            <h2 class="presentacion__subtitulo">Listo para nuevos desafios</h2>
+            <p> Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>           
+            <br>
+            <ul>
+                <div class="contacto__info">
+                    <li>
+                        <a href="https://www.rivellini.com" target="_blank" class="contacto__icono" ><i class="bx bx-map"></i> www.rivellini.com</a>
+                    </li>
+                </div>
+                <div class="contacto__info">
+                    <li>
+                       <a href="mailto:contacto@rivellni.com" target="_blank" class="contacto__icono" ><i class="bx bx-envelope"></i> contacto@rivellini.com</a>
+                    </li>
+                </div>
+                <div class="contacto__info">
+                    <li> 
+                        <a href="tel:5491166046604" class="contacto__icono" target="_blank" ><i class="bx bx-phone"></i><span class="contacto__fuente"> +54 9 11 66046604</a>
+                    </li>
+                </div>
+                <div class="contacto__info">    
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=5491166046604%20&text=Hola,%20vi%20tu%20CV%20y%20me%20interesaría%20contactarte.%20&source=&data=" class="contacto__icono" target="_blank"><i class="bx bxl-whatsapp"></i> +54 9 11 66046604</a>
+                    </li>
+                </div>  
+            </ul>            
+        </div>                                   
+    </div>
+</section>
 </main>
     <!-- ======== PIE DE PÁGINA ======== -->  
-    
+
+
+    <!-- SCRIPT SCROLL ================= -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- JS PRINCIPAL ================== -->
+    <script src="js/main.js"></script>
 </body>
 </html>
