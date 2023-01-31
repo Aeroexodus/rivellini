@@ -378,5 +378,34 @@ ul {
   .nav__link {
     color: var(--color-secundario);
   }
+  .inicio {
+    padding: 8rem 0 2rem;
+  }
+  .inicio__imagen {
+    width: 400px;
+    bottom: 10%;
+  }
+  .presentacion__contenedor {
+    padding-top: 2rem;
+  }
+  .presentacion__imagen img {
+    width: 300px;
+  }
+  .contacto__contenedor {
+    padding-top: 2rem;
+  }
   
+}
+
+@media screen and (min-width: 992px) {
+  .grilla {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .inicio {
+    padding: 10rem 0 2rem;
+  }
+  .inicio__imagen {
+    width: 450px;
+  }
 }
