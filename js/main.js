@@ -1,4 +1,4 @@
-/*===== MOSTRAR MENÚ =====*/  
+/*======= MOSTRAR MENÚ =======*/  
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
@@ -10,7 +10,7 @@ const showMenu = (toggleId, navId) =>{
 }
 showMenu('nav-hamburguesa','nav-menu')
 
-/*===== REMOVER MENÚ =====*/
+/*======= REMOVER MENÚ =======*/
 const navLink = document.querySelectorAll('.nav__link')
 function linkAction(){
     const navMenu = document.getElementById('nav-menu')
@@ -18,7 +18,27 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*======== ACORDEON =======*/
+/*== SELECCIÓN ACTIVA DE MENÚ ==*/
+const sections = document.querySelectorAll('section[id]')
+
+function scrollActive(){
+    const scrollY = window.pageYOffset
+
+    sections.forEach(current =>{
+        const sectionHeight = current.offsetHeight
+        const sectionTop = current.offsetTop - 50;
+        sectionId = current.getAttribute('id')
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active')
+        }else{
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active')
+        }
+    })
+}
+window.addEventListener('scroll', scrollActive)
+
+/*========== ACORDEON =========*/
 const acordeonContent = document.getElementsByClassName('acordeon__contenido'),
     acordeonHeader = document.querySelectorAll('.acordeon__cabecera')
 
@@ -36,3 +56,17 @@ function toggleacordeon(){
 acordeonHeader.forEach((el) =>{
     el.addEventListener('click', toggleacordeon)
 })
+
+/*===== ANIMACIÓN DE SCROLL =====*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2000,
+    delay: 200,
+//     reset: true
+});
+
+sr.reveal('.inicio__data, .presentacion__imagen, .acordeon__subtitulo, .acordeon__texto',{}); 
+sr.reveal('.inicio__imagen, .presentacion__subtitulo, .contacto__info, .acordeon__imagen',{delay: 300});
+sr.reveal('.acordeon__data, .acordeon__cabecera, .trabajo__imagen, .inicio__social',{interval: 200}); 
+sr.reveal('.contenido, .seccion',{interval: 100});

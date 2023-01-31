@@ -613,6 +613,7 @@ ul {
     padding-bottom: 3rem;
   }
   .titulo-seccion {
+    margin-top: var(--margen-5);
     margin-bottom: var(--margen-6);
   }
   .titulo-seccion::after {
