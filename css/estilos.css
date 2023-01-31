@@ -396,7 +396,23 @@ ul {
 
 /* DATOS DE BARRAS DE ACORDEON === */
 
- .acordeon__html {
+.acordeon__ux {
+  width: 95%;
+}
+.acordeon__figma {
+  width: 90%;
+}
+
+.acordeon__sketch {
+  width: 75%;
+}
+
+.acordeon__photoshop {
+  width: 85%;
+}
+
+
+.acordeon__html {
   width: 95%;
 }
 
@@ -405,12 +421,22 @@ ul {
 }
 
 .acordeon__js {
-  width: 65%;
+  width: 75%;
 }
 
-.acordeon__ux {
+
+.acordeon__php {
   width: 85%;
 }
+
+.acordeon__python {
+  width: 80%;
+}
+
+.acordeon__njs {
+  width: 75%;
+}
+
 
 .acordeon__es {
   width: 99%;
@@ -423,7 +449,6 @@ ul {
   width: 60%;
 }
 
-    
 
 
 /* ==== EXPERIENCIA Y TRABAJOS ==== */
